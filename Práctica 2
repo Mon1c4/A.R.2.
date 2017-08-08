@@ -1,0 +1,27 @@
+# A.R.2.
+#Crear 3 variables de 4 entradas: facultad (economía, ing, arq, derecho),
+#licenciatura (actuaria, ing civil, arquitectura, derecho)
+#calificación alumno (6,4,10,8)
+
+#verficiar que tipo de variales son
+#borrar variables facultad y licenciatura
+#graficar con pie la variable calficacion
+#incorporar los diversos argumentos utilizados en clase
+
+Facultad<-c("Economía", "Ingeniería", "Arquitectura","Derecho")
+Licenciatura<-c("Actuaría", "Ingeniería Civil", "Arquitectura", "Derecho")
+Calificación<-c(6,4,10,8)
+
+class(Facultad)
+class(Licenciatura)
+class(Calificación)
+
+rm(Facultad)
+rm(Licenciatura)
+
+pie(Calificación,main="Calificaciones de alumnos", 
+  sub="Facultad de Economía, Ingeniería, Arquitectura y Derecho",
+  col=c("purple","pink", "blue","brown"),
+  radius=1,
+  clockwise = TRUE,lty=4)
+  
